@@ -1,0 +1,12 @@
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\bin\Debug\Tipo de operadores.exe.config
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\bin\Debug\Tipo de operadores.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\bin\Debug\Tipo de operadores.pdb
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\bin\Debug\Tipo de operadores.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo de operadores.vbproj.AssemblyReference.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo de operadores.vbproj.SuggestedBindingRedirects.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo_de_operadores.Resources.resources
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo de operadores.vbproj.GenerateResource.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo de operadores.vbproj.CoreCompileInputs.cache
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo de operadores.exe
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo de operadores.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\Tipo de operadores\obj\Debug\Tipo de operadores.pdb
