@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+32_SubRotina_ComParametros
+</name>
+</assembly>
+<members>
+<member name="T:_32_SubRotina_ComParametros.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:_32_SubRotina_ComParametros.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:_32_SubRotina_ComParametros.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:_32_SubRotina_ComParametros.Form1.Ativa(System.String@,System.Int32)">
+ <summary>
+ Sub rotina para passar o nome e o ano do cliente.
+ </summary>
+ <param name="strNome">Informe o nome do cliente</param>
+ <param name="intAno">Informe quantos anos o cliente tem</param>
+</member>
+</members>
+</doc>
