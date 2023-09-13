@@ -20,5 +20,6 @@ Public Class frmConsulta
         Dim table As New DataTable
         table.Load(dataR)
         dgv_dados.DataSource = table
+        connection.Close()
     End Sub
 End Class
