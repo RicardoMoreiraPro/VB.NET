@@ -13,3 +13,14 @@ C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\obj\Debug\46_BancoDeDados.exe
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\obj\Debug\46_BancoDeDados.xml
 C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\obj\Debug\46_BancoDeDados.pdb
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\x86\sqlite3.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\x64\sqlite3.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\EntityFramework.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\System.Data.SQLite.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\EntityFramework.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\bin\Debug\System.Data.SQLite.xml
+C:\Users\ricar\OneDrive\Ambiente de Trabalho\Rep. GitHub\VB.NET\46_BancoDeDados\obj\Debug\46_BancoDeDados.vbproj.CopyComplete

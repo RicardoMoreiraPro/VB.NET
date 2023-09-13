@@ -25,11 +25,11 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.AgendaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_cadastro = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_consulta = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.tsb_cliente = New System.Windows.Forms.ToolStripButton()
         Me.tsb_consultar = New System.Windows.Forms.ToolStripButton()
-        Me.ms_cadastro = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_consulta = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -49,6 +49,20 @@ Partial Class Form1
         Me.AgendaToolStripMenuItem.Name = "AgendaToolStripMenuItem"
         Me.AgendaToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.AgendaToolStripMenuItem.Text = "Agenda"
+        '
+        'ms_cadastro
+        '
+        Me.ms_cadastro.Image = Global._46_BancoDeDados.My.Resources.Resources.local_na_rede_internet
+        Me.ms_cadastro.Name = "ms_cadastro"
+        Me.ms_cadastro.Size = New System.Drawing.Size(121, 22)
+        Me.ms_cadastro.Text = "Cadastro"
+        '
+        'ms_consulta
+        '
+        Me.ms_consulta.Image = Global._46_BancoDeDados.My.Resources.Resources.lupa
+        Me.ms_consulta.Name = "ms_consulta"
+        Me.ms_consulta.Size = New System.Drawing.Size(121, 22)
+        Me.ms_consulta.Text = "Consulta"
         '
         'ToolStrip1
         '
@@ -78,20 +92,6 @@ Partial Class Form1
         Me.tsb_consultar.Name = "tsb_consultar"
         Me.tsb_consultar.Size = New System.Drawing.Size(36, 36)
         Me.tsb_consultar.Text = "Consultar"
-        '
-        'ms_cadastro
-        '
-        Me.ms_cadastro.Image = Global._46_BancoDeDados.My.Resources.Resources.local_na_rede_internet
-        Me.ms_cadastro.Name = "ms_cadastro"
-        Me.ms_cadastro.Size = New System.Drawing.Size(121, 22)
-        Me.ms_cadastro.Text = "Cadastro"
-        '
-        'ms_consulta
-        '
-        Me.ms_consulta.Image = Global._46_BancoDeDados.My.Resources.Resources.lupa
-        Me.ms_consulta.Name = "ms_consulta"
-        Me.ms_consulta.Size = New System.Drawing.Size(121, 22)
-        Me.ms_consulta.Text = "Consulta"
         '
         'Form1
         '

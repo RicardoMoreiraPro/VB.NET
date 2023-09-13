@@ -23,16 +23,17 @@ Partial Class frmConsulta
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.tb_nome = New System.Windows.Forms.TextBox()
         Me.tb_cep = New System.Windows.Forms.TextBox()
+        Me.tb_nome = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.dgv_dados = New System.Windows.Forms.DataGridView()
         Me.colCodigo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colNome = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colCep = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.ColEndereco = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colNumero = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colBairro = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colComplemento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colUF = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -56,14 +57,19 @@ Partial Class frmConsulta
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filtrar por"
         '
-        'Label1
+        'tb_cep
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 28)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(38, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nome:"
+        Me.tb_cep.Location = New System.Drawing.Point(490, 28)
+        Me.tb_cep.Name = "tb_cep"
+        Me.tb_cep.Size = New System.Drawing.Size(134, 20)
+        Me.tb_cep.TabIndex = 3
+        '
+        'tb_nome
+        '
+        Me.tb_nome.Location = New System.Drawing.Point(47, 28)
+        Me.tb_nome.Name = "tb_nome"
+        Me.tb_nome.Size = New System.Drawing.Size(384, 20)
+        Me.tb_nome.TabIndex = 2
         '
         'Label2
         '
@@ -74,19 +80,14 @@ Partial Class frmConsulta
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "CEP:"
         '
-        'tb_nome
+        'Label1
         '
-        Me.tb_nome.Location = New System.Drawing.Point(47, 28)
-        Me.tb_nome.Name = "tb_nome"
-        Me.tb_nome.Size = New System.Drawing.Size(384, 20)
-        Me.tb_nome.TabIndex = 2
-        '
-        'tb_cep
-        '
-        Me.tb_cep.Location = New System.Drawing.Point(490, 28)
-        Me.tb_cep.Name = "tb_cep"
-        Me.tb_cep.Size = New System.Drawing.Size(134, 20)
-        Me.tb_cep.TabIndex = 3
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(38, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Nome:"
         '
         'GroupBox2
         '
@@ -108,7 +109,7 @@ Partial Class frmConsulta
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv_dados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colCodigo, Me.colNome, Me.colCep, Me.ColEndereco, Me.colBairro, Me.colComplemento, Me.colUF, Me.colFone1, Me.colFone2})
+        Me.dgv_dados.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colCodigo, Me.colNome, Me.colCep, Me.ColEndereco, Me.colNumero, Me.colBairro, Me.colComplemento, Me.colUF, Me.colFone1, Me.colFone2})
         Me.dgv_dados.Location = New System.Drawing.Point(6, 10)
         Me.dgv_dados.Name = "dgv_dados"
         Me.dgv_dados.ReadOnly = True
@@ -142,6 +143,13 @@ Partial Class frmConsulta
         Me.ColEndereco.HeaderText = "Endereço"
         Me.ColEndereco.Name = "ColEndereco"
         Me.ColEndereco.ReadOnly = True
+        '
+        'colNumero
+        '
+        Me.colNumero.DataPropertyName = "NUMERO"
+        Me.colNumero.HeaderText = "Numero"
+        Me.colNumero.Name = "colNumero"
+        Me.colNumero.ReadOnly = True
         '
         'colBairro
         '
@@ -207,6 +215,7 @@ Partial Class frmConsulta
     Friend WithEvents colNome As DataGridViewTextBoxColumn
     Friend WithEvents colCep As DataGridViewTextBoxColumn
     Friend WithEvents ColEndereco As DataGridViewTextBoxColumn
+    Friend WithEvents colNumero As DataGridViewTextBoxColumn
     Friend WithEvents colBairro As DataGridViewTextBoxColumn
     Friend WithEvents colComplemento As DataGridViewTextBoxColumn
     Friend WithEvents colUF As DataGridViewTextBoxColumn
