@@ -53,40 +53,53 @@ Public Class CAD_CLIENTE
 #End Region
 
 #Region "Variáveis"
-    'Private dbCommand As String = ""
-    'Private bindingSrc As BindingSource
 
-    'Private dbName As String = "Banco.db"
-    'Private dbPath As String = "C:\Banco VB\" & dbName
-    'Private connString As String = "Data Source =" & dbPath & ";Version=3"
+    Private dbName As String = "Banco.db"
+    Private dbPath As String = "C:\Banco VB\" & dbName
+    Private connString As String = "Data Source =" & dbPath & ";Version=3"
 
-    'Private connection As New SQLiteConnection(connString)
-    'Private command As New SQLiteCommand("", connection)
+    Private connection As New SQLiteConnection(connString)
+    Private command As New SQLiteCommand("", connection)
+
+
 #End Region
 
 #Region "Funções e SubRotinas"
-    'Private dbCommand As String = ""
-    'Private bindingSrc As BindingSource
-    'Public Function ConexaoBanco(query As String) As SQLiteConnection
-    '    Dim dbName As String = "Banco.db"
-    '    Dim dbPath As String = "C:\Banco VB\" & dbName
-    '    Dim connString As String = "Data Source =" & dbPath & ";Version=3"
-
-    '    Dim connection As New SQLiteConnection(connString)
-    '    Dim command As New SQLiteCommand("", connection)
+    Public Function ExecutaGet(ByVal sql As String) As DataTable
+        connection.Open()
+        command.Connection = connection
+        command.CommandText = sql
+        Dim dataR As SQLiteDataReader = command.ExecuteReader
+        Dim table As New DataTable
+        table.Load(dataR)
+        Return table
+        connection.Close()
+    End Function
+    'Public Function ExecutaSet(ByVal sql As String) As DataTable
     '    connection.Open()
-
-    '    command.Connection = connection
-    '    command.CommandText = query
-
-    '    Dim dataR As SQLiteDataReader = command.ExecuteReader
-
-
-    '    Dim table As New DataTable
-    '    table.Load(dataR)
-    '    'DataGridView.DataSource = table
-    '    Return connection
+    '    Dim cmd As SQLiteConnection = command.Connection
+    '    cmd = connection
+    '    Dim tex As String = command.CommandText = sql
+    '    Dim da As SQLiteDataAdapter = command.ExecuteScalar
+    '    Dim dt As DataTable = New DataTable
+    '    da = New SQLiteDataAdapter(tex, cmd)
+    '    command.ExecuteNonQuery()
+    '    dt.Load(da)
+    '    Return dt
+    '    connection.Close()
     'End Function
+    'Public Function ExecutaSet(ByRef adf As String) As DataTable
+    '    connection.Open()
+    '    command.Connection = connection
+    '    command.CommandText = adf
+    '    Dim dataR As SQLiteDataAdapter = command.ExecuteScalar
+    '    Dim dt As DataTable = New DataTable
+    '    Dim consulta As String = "Select * from CAD_CLIENTE"
+    '    dt = ExecutaGet(consulta)
+    '    Return dt
+    '    connection.Close()
+    'End Function
+
 
 #End Region
 
