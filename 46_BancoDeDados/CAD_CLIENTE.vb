@@ -72,8 +72,9 @@ Public Class CAD_CLIENTE
         Dim dataR As SQLiteDataReader = command.ExecuteReader
         Dim table As New DataTable
         table.Load(dataR)
-        Return table
         connection.Close()
+        Return table
+
     End Function
     'Public Function ExecutaSet(ByVal sql As String) As DataTable
     '    connection.Open()
@@ -99,6 +100,29 @@ Public Class CAD_CLIENTE
     '    Return dt
     '    connection.Close()
     'End Function
+    Public Function ExecutaSet(sql As String) As DataTable
+        connection.Open()
+        command.Connection = connection
+        command.CommandText = sql
+        Dim ds As New DataSet
+        Dim dataR As SQLiteDataAdapter
+        dataR = New SQLiteDataAdapter(sql, connection)
+        dataR.Fill(ds)
+        Dim dt As DataTable = Refresh(ds)
+        connection.Close()
+        Return dt
+
+    End Function
+    Public Function Refresh(ByVal sql As DataSet) As DataTable
+
+        command.Connection = connection
+        command.CommandText = "Select * from CAD_CLIENTE"
+        Dim dataR As SQLiteDataReader = command.ExecuteReader
+        Dim table As New DataTable
+        table.Load(dataR)
+        Return table
+
+    End Function
 
 
 #End Region

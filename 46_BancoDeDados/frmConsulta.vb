@@ -3,6 +3,7 @@ Imports System.Data.SQLite
 Imports System.Security.Cryptography.X509Certificates
 
 Public Class frmConsulta
+    Dim cadCliente As New CAD_CLIENTE
     Private Sub frmConsulta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 #Region "Codigo base"
         'Dim dbName As String = "Banco.db"
@@ -25,9 +26,14 @@ Public Class frmConsulta
         'connection.Close()
 #End Region
         Dim query As String = "Select * from CAD_CLIENTE"
-        Dim cadCliente As New CAD_CLIENTE
+
         Dim table As DataTable = cadCliente.ExecutaGet(query)
         dgv_dados.DataSource = table
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim quer As String = "insert into CAD_CLIENTE(NOME, CEP) values ('Ricardo', '235665')"
+        Dim tab As DataTable = cadCliente.ExecutaSet(quer)
+        dgv_dados.DataSource = tab
+    End Sub
 End Class
