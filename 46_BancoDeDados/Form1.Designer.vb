@@ -54,14 +54,14 @@ Partial Class Form1
         '
         Me.ms_cadastro.Image = Global._46_BancoDeDados.My.Resources.Resources.local_na_rede_internet
         Me.ms_cadastro.Name = "ms_cadastro"
-        Me.ms_cadastro.Size = New System.Drawing.Size(121, 22)
+        Me.ms_cadastro.Size = New System.Drawing.Size(180, 22)
         Me.ms_cadastro.Text = "Cadastro"
         '
         'ms_consulta
         '
         Me.ms_consulta.Image = Global._46_BancoDeDados.My.Resources.Resources.lupa
         Me.ms_consulta.Name = "ms_consulta"
-        Me.ms_consulta.Size = New System.Drawing.Size(121, 22)
+        Me.ms_consulta.Size = New System.Drawing.Size(180, 22)
         Me.ms_consulta.Text = "Consulta"
         '
         'ToolStrip1
