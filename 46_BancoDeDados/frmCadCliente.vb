@@ -133,6 +133,35 @@
     End Sub
 
     Private Sub tsb_salvar_Click(sender As Object, e As EventArgs) Handles tsb_salvar.Click
+        Dim obj As New CAD_CLIENTE
+        'Dim strSQL As String
+
+
+        If tb_codigo.TextLength > 0 Then
+                obj.CODIGO = Convert.ToInt32(tb_codigo.Text)
+            End If
+        obj.NOME = tb_nome.Text
+        obj.CEP = tb_cep.Text
+            obj.ENDERECO = tb_endereco.Text
+            obj.BAIRRO = tb_bairro.Text
+            obj.UF = tb_uf.Text
+            obj.NUMERO = tb_numero.Text
+            obj.COMPLEMENTO = tb_complemento.Text
+            obj.FONE1 = tb_fone1.Text
+        obj.FONE2 = tb_fone2.Text
+
+
+
+        'obj.NOME, obj.CEP, obj.ENDERECO, obj.BAIRRO, obj.UF, obj.NUMERO, obj.COMPLEMENTO, obj.FONE1, obj.FONE2
+        ''tb_nome.Text, tb_cep.Text, tb_endereco.Text, tb_bairro.Text, tb_uf.Text, tb_numero.Text, tb_complemento.Text, tb_fone1.Text, tb_fone2.Text
+        'Select Case intOpcao
+        '        Case Opcao.Incluir
+        '            strSQL = ("INSERT INTO CAD_CLIENTE (NOME, CEP, ENDERECO, BAIRRO, UF, NUMERO, COMPLEMENTO, FONE1, FONE2) VALUES (obj.NOME, obj.CEP, obj.ENDERECO, obj.BAIRRO, obj.UF, obj.NUMERO, obj.COMPLEMENTO, obj.FONE1, obj.FONE2)")
+        '            obj.ExecutaSet2(strSQL)
+        '        Case Opcao.Editar
+
+        '    End Select
+
 
     End Sub
 End Class

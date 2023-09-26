@@ -50,6 +50,7 @@ Public Class CAD_CLIENTE
     Public Property FONE2 As String
     Public Property NUMERO As String
 
+
 #End Region
 
 #Region "Variáveis"
@@ -123,6 +124,18 @@ Public Class CAD_CLIENTE
         Return table
 
     End Function
+
+    Public Sub ExecutaSet2(sql As String)
+        connection.Open()
+        command.Connection = connection
+        command.CommandText = sql
+        Dim ds As New DataSet
+        Dim dataR As SQLiteDataAdapter
+        dataR = New SQLiteDataAdapter(sql, connection)
+        dataR.Fill(ds)
+        connection.Close()
+    End Sub
+
 
 
 #End Region
